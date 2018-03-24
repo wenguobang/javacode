@@ -6,6 +6,7 @@ public class HelloWorld {
 		Test t = new Test();
 		t.Set(3);
 		System.out.println(t.Get());
+		t.info();
 	}
 
 }
@@ -16,5 +17,8 @@ class Test{
 	}	
 	public int Get() {
 		return i;
+	}
+	public void info() {
+		System.out.println(this.i);
 	}
 }
