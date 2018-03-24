@@ -11,9 +11,12 @@ public class HelloWorld {
 		Person p = new Person();
 		p.Set("ÎÄ¹ú°î");
 		System.out.println(p.Get());
+		p.Info();
 	}
 
 }
+
+
 
 class Person{
 	private int age;
@@ -23,6 +26,9 @@ class Person{
 	}
 	public String Get() {
 		return this.name;
+	}
+	public void Info() {
+		System.out.println("age:"+this.age +" "+ "name:"+this.name);
 	}
 	
 }
