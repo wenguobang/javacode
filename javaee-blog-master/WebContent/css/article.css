@@ -1,0 +1,86 @@
+
+body {
+	background: #eee;
+}
+
+a:link {
+	text-decoration: none;	
+}
+
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 250px;
+  right: 10px;
+  overflow: hidden;
+  width: 40px;
+  height: 35px;
+  border: none;
+  text-indent: 100%;
+  background: url(/Blog/img/top.png) no-repeat 0px 0px;
+}
+
+.c_center {
+	text-align: center;
+}
+
+.c_left {
+	text-align: left;
+}
+
+.c_right {
+	text-align: right;
+}
+
+.n_div{
+	clear:both;
+}
+.f_div {
+	float: left;
+}
+
+.r_div {
+	float: right;
+}
+
+.head_line {
+	border-bottom: 1px solid #177cb0;
+}
+.line{
+	clear:both;
+	border-top:1px solid #C0C0C0;	
+	margin-bottom:10px;
+}
+#main {
+	margin-top:50px;
+	width: 68%;
+}
+
+#article {
+	margin-top:80px;
+	margin-bottom:80px;
+	text-align: center;
+	clear: both;
+}
+#a_head{
+	padding-bottom:10px;
+}
+
+
+#tag{
+  clear:both;
+  margin-bottom:20px;
+}
+#a_content{
+	margin-top:50px;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+
+#footer {		
+		margin-top:100px;
+		text-align: center;
+		margin-bottom:20px;
+}

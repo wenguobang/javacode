@@ -14,12 +14,12 @@ package com.wgb.teststatic1;
 
 public class StaticTest1 {
 	public static void main(String[] args) {
-		SportMan.nation = "China";
+		SportMan.nation = "China";//类变量访问方法一
 		//SportMan.name = "wgb";//不能"类.实例变量"访问
 		SportMan s1 =new SportMan("文国邦", 23);
 		SportMan s2 = new SportMan("李楠", 21);
 		s1.name = "wff";
-		s1.nation = "American";
+		s1.nation = "American";//类变量访问方法二
 		System.out.println(s1.toString());
 		System.out.println(s2.toString());
 		
@@ -42,6 +42,13 @@ class SportMan{
 	public String toString() {
 		return "SportMan [name=" + name + ", age=" + age + ", nation=" + nation + "]";
 	}
+	
+	public void show() {
+		System.out.println("我是一个非静态方法");
+	}
 
+	public static void show1() {
+		System.out.println("我是一个静态方法");
+	}
 	
 }

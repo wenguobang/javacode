@@ -13,6 +13,7 @@ public class ArrayTest {
 		for(int i:a) {
 			System.out.println(i);
 		}
+		System.out.println(a[8]);
 		System.out.println(Arrays.binarySearch(a, 2));
 	}
 	
