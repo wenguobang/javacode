@@ -1,7 +1,6 @@
 package blog.servlet;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,6 +23,9 @@ public class ArticleServlet extends HttpServlet {
 		ArticleService as =  ArticleService.getInstance();		
 		//文章
 		Article a = as.getArticle("id",id).get(0);
+//		int id1 = Integer.valueOf(id); 
+//		a.setId(id1);
+//		System.out.println(a.getId());
 		request.setAttribute("article",a);		
 		
 		//文章的所有标签

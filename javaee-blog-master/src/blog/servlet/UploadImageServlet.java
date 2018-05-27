@@ -17,6 +17,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 //import config.LocalMysql;
 
 import blog.db.C3P0Connection;
+import blog.service.DeleteFile;
 
 //@SuppressWarnings("serial")
 @WebServlet("/UploadImageServlet")
@@ -30,6 +31,9 @@ public class UploadImageServlet extends HttpServlet {
      */
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+    	//删除文件夹images
+    	DeleteFile df = new DeleteFile();
+    	String path = "E:/java_workplace/javaee-blog-master/WebContent/img/images/";
         //设置读取上传文件文件的缓存
         DiskFileItemFactory factory = new DiskFileItemFactory();
         ServletFileUpload sfu = new ServletFileUpload(factory);
@@ -51,6 +55,7 @@ public class UploadImageServlet extends HttpServlet {
                  pre.setBlob(2, fileItem.getInputStream());
                  pre.executeUpdate();
                  pre.close();
+                 df.delFolder(path);
                  request.getRequestDispatcher("/page/uploadimage.jsp").forward(request, response);	
                  //response.sendRedirect("/Blog/GetImage?data="+URLEncoder.encode(name, "UTF-8"));//上传成功跳转到测试页面
             }           

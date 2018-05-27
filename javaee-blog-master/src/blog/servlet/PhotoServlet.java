@@ -17,13 +17,16 @@ public class PhotoServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 
-		PhotoService as =  PhotoService.getInstance();		
-		//初始化文章列表
-		request.setAttribute("MaxCount", as.getCount());
-		//response.sendRedirect("/page/photo.jsp");
-
-		//
+		PhotoService as =  PhotoService.getInstance();
 		
+//		int MaxCount = as.getCount();
+//		int[] mylist = new int[MaxCount+1];
+//		for(int i=1;i<=MaxCount;i++) {
+//			mylist[i]=i;
+//		}
+		//初始化文章列表
+		//request.setAttribute("name_list", mylist);
+		//
 		try {
 			ReadDBImage rd = new ReadDBImage();
 			rd.readDB2Image(as.getCount());

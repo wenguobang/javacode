@@ -92,7 +92,7 @@ public class PhotoDaoImpl implements PhotoDao{
 		// TODO Auto-generated method stub
 		List<String> list = new ArrayList<String>();
 
-		String sql = "select name from image";
+		String sql = "select id from image";
 		PreparedStatement ps;
 		try {
 			ps = conn.prepareStatement(sql);

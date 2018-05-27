@@ -76,7 +76,7 @@ public class Form2Bean {
 		throw new FailException("Create Fail!");
 		
 	}
-	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static Eassy EassyForm2Bean(HttpServletRequest request) throws FailException{
 		
 		Map value = new HashMap();
@@ -108,7 +108,6 @@ public class Form2Bean {
 		
 		return result;
 	}
-	
 	private static boolean vilidate(Article a){
 		boolean result= true;
 		

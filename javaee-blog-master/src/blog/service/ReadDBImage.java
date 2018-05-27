@@ -16,7 +16,7 @@ import blog.utils.ImageUtil;
      public static void readDB2Image(int MaxCount) throws SQLException {
     	 int count = 1;
     	 while(count<=MaxCount) {
-         String targetPath = "E:/java_workplace/javaee-blog-master/WebContent/images/"+count+".png";
+         String targetPath = "E:/java_workplace/javaee-blog-master/WebContent/img/images/"+count+".jpg";
         
          Connection conn = null;
          PreparedStatement ps = null;

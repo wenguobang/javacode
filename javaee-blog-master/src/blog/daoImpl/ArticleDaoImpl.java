@@ -313,6 +313,7 @@ public class ArticleDaoImpl implements ArticleDao {
 				at = new Article(rs.getInt("id"), rs.getString("title"), rs.getString("author"), rs.getString("sort"),
 						rs.getString("time"), rs.getInt("star"), rs.getInt("comment"), rs.getInt("visit"),
 						rs.getString("content"));
+				System.out.println(at.toString());
 				list.add(at);
 			}
 			// 关闭连接

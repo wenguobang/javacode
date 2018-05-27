@@ -78,7 +78,7 @@
               <span>心情随笔</span>
             </a>
             <a href="/Blog/page/hobby.html">
-              <span>爱好</span>
+              <span>车标</span>
             </a>
             <a href="/Blog/PhotoServlet?get=all">
               <span>相册</span>
@@ -102,7 +102,6 @@
             	<span>管理</span></a> 
             	<a href="/Blog/ExitServet?get=all">
             	<span>退出</span></a>                  	        	
-            </a>
             </c:if>
           </div>
         </nav>
@@ -126,7 +125,7 @@
             <div class="row">
               <div class="wrap-hero-content">
                   <div class="hero-content">
-                    <h1>Hello</h1>
+                    <h1>W.Blog</h1>
                     <br>
                     <span class="typed"></span>
                   </div>
@@ -149,30 +148,30 @@
                   <div class="list-testimonial">
                     <div class="content-testimonial">
                       <h3 class="testi">
-                        “ Reza did a phenominal job setting up my a website for my product He performed the task very quickly and efficiently. We know we have the superior topical pain relief cream on the market and he has helped us communicate that message via the website he built from scratch. Thanks! ”
+                      “ 人生是个圆，有的人走了一辈子也没有走出命运画出的圆圈，其实，圆上的每一个点都有一条腾飞的切线 ”
                       </h3>
                       <p class="people">
-                        Darin Cohen - Active10
+                        	名人
                       </p>
                     </div>
                   </div>
                   <div class="list-testimonial">
                     <div class="content-testimonial">
                       <h3 class="testi">
-                        “ Another successful project working with Reza. He has great design skills, is very responsive and professional. Looking forward to the next opportunity to work together. ”
+                        “ 人生最大的快乐是致力于一个自己认为伟大的目标 ”
                       </h3>
                       <p class="people">
-                        Marko Milicevic
+                      		萧伯纳
                       </p>
                     </div>
                   </div>
                   <div class="list-testimonial">
                     <div class="content-testimonial">
                       <h3 class="testi">
-                        “ Great designer! I like his sense of design, especially the color scheme. Quick turnaround. Look forward to work with him again. Thanks!! ”
+                        “穿掘着灵魂的深处，使人受了精神底苦刑而得到创伤，又即从这得伤和养伤和愈合中，得到苦的涤除，而上了苏生的路”
                       </h3>
                       <p class="people">
-                        JK Thang
+                        	鲁迅
                       </p>
                     </div>
                   </div>

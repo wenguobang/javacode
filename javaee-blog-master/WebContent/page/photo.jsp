@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c" %>
 <%@ page import = "blog.service.PhotoService" %>
 
 <%
@@ -13,6 +14,7 @@
 	<head>
 		<title>相册</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="/Blog/assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -25,15 +27,17 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="/Blog/index.jsp"><strong>HOME</strong></a></h1>
+					<nav>
+						<ul>
+							<li><a href="/Blog/index.jsp">首页</a></li>
+						</ul>
+					</nav>
 					</header>
-
 				<!-- Main -->
 					<div id="main">
 						<% for(id=1;id<= MaxCount;id++) { %>
-						<% path = "/Blog/images/"+id+".png"; %>
 							<article class="thumb">
-								<img src= path alt="不见了" >
+							<img src= <%="/Blog/img/images/"+id+".jpg" %> />
 							</article>
 						<% } %>
 					</div>  
